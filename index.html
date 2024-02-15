@@ -4,14 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-5b791d57.js">
-    <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-cf6910df.css">
+    <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-5b791d57.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-cf6910df.css">
   </head>
   <body>
-    <div id="loader" style="display: none">Loading...</div>
-    <form id="search-form">
-      <input type="text" id="search-keyword" placeholder="Enter keyword" />
+    <div id="loader" class="sk-circle" style="display: none">
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <!-- Add more divs for additional spinners -->
+    </div>
+    <form id="searchForm">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Enter your search query"
+      />
       <button type="submit">Search</button>
     </form>
     <div id="gallery"></div>
