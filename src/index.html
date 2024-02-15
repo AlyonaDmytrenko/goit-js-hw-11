@@ -6,12 +6,7 @@
     <title>Vanilla App Template</title>
   </head>
   <body>
-    <div id="loader" class="sk-circle" style="display: none">
-      <div class="sk-circle1 sk-child"></div>
-      <div class="sk-circle2 sk-child"></div>
-      <div class="sk-circle3 sk-child"></div>
-      <!-- Add more divs for additional spinners -->
-    </div>
+    <div id="loader" class="sk-circle" style="display: none"></div>
     <form id="searchForm">
       <input
         type="text"
@@ -21,6 +16,7 @@
       <button type="submit">Search</button>
     </form>
     <div id="gallery"></div>
-    <script src="./js/pixabay.js" type="module"></script>
+    <script src="./js/pixabay-api.js" type="module"></script>
+    <script src="./js/render-functions.js" type="module"></script>
   </body>
 </html>
