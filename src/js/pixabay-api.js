@@ -26,6 +26,7 @@ export function someFunction() {
 
   function fetchImages(query) {
     const apiKey = '42375067-5abc1b4a099550ffbb458c60e';
+
     const url = `https://pixabay.com/api/?key=${apiKey}&q=${query}&image_type=photo&orientation=horizontal&safesearch=true`;
     fetch(url)
       .then(response => {
