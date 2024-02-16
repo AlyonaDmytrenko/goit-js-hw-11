@@ -4,18 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-js-hw-11</title>
+    
+    <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-5b791d57.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-cf6910df.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-b8e6a12d.css">
   </head>
   <body>
     <div id="loader" class="sk-circle" style="display: none"></div>
-    <form id="searchForm">
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="Enter your search query"
-      />
-      <button type="submit">Search</button>
-    </form>
-    <div id="gallery"></div>
-    <script src="./main.js"></script>
+    <div>
+      <form id="searchForm" class="form-box">
+        <input
+          class="input-box"
+          type="text"
+          id="searchInput"
+          placeholder="Search images..."
+        />
+        <button class="form-btn" type="submit">Search</button>
+      </form>
+    </div>
+    <div id="gallery" class="gallery"></div>
+    
   </body>
 </html>
