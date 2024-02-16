@@ -1,9 +1,9 @@
-export function someFunction() {
-  import iziToast from 'izitoast';
-  import 'izitoast/dist/css/iziToast.min.css';
-  import SimpleLightbox from 'simplelightbox';
-  import 'simplelightbox/dist/simple-lightbox.min.css';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
+export function someFunction() {
   const searchForm = document.getElementById('searchForm');
   const searchInput = document.getElementById('searchInput');
   const loader = document.getElementById('loader');
@@ -20,7 +20,7 @@ export function someFunction() {
       return;
     }
     loader.style.display = 'block';
-    gallery.innerHTML = ''; // Clear previous results
+    gallery.innerHTML = '';
     fetchImages(query);
   });
 
@@ -70,3 +70,4 @@ export function someFunction() {
     SimpleLightbox.refresh();
   }
 }
+someFunction();

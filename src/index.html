@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-js-hw-11</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div id="loader" class="sk-circle" style="display: none"></div>
-    <form id="searchForm">
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="Enter your search query"
-      />
-      <button type="submit">Search</button>
-    </form>
-    <div id="gallery"></div>
-    <script src="./main.js"></script>
+    <div>
+      <form id="searchForm" class="form-box">
+        <input
+          class="input-box"
+          type="text"
+          id="searchInput"
+          placeholder="Search images..."
+        />
+        <button class="form-btn" type="submit">Search</button>
+      </form>
+    </div>
+    <div id="gallery" class="gallery"></div>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
