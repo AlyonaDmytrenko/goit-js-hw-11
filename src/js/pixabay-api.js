@@ -68,7 +68,9 @@ export function someFunction() {
       .join('');
     gallery.innerHTML = galleryContent;
 
-    SimpleLightbox.refresh();
+    const lightbox = new SimpleLightbox('.gallery a');
+    lightbox.refresh();
   }
 }
-someFunction();
+
+someFunction(); // Викликаємо функцію для початку роботи
