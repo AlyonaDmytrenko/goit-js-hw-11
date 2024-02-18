@@ -73,4 +73,4 @@ export function someFunction() {
   }
 }
 
-someFunction(); // Викликаємо функцію для початку роботи
+someFunction();
